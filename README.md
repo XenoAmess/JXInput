@@ -1,7 +1,11 @@
-JXInput
+JXInput [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.xenoamess/jxinput/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.xenoamess/jxinput)
 =======
 
 Java binding for [XInput](https://msdn.microsoft.com/en-us/library/windows/desktop/ee417001(v=vs.85).aspx).
+
+A fork for putting it in maven central.
+
+The original project can be found at [StrikerX3/JXInput](https://github.com/StrikerX3/JXInput)
 
 Visual Studio 2017 solution contains the native code, which is already compiled and included in the Java project. It depends on XInput 1.3, which is used by Direct 9.0c games. XInput 1.4 is also supported through an extended API.
 
@@ -13,43 +17,16 @@ The [Visual C++ Redistributable Packages for Visual Studio 2017](https://support
 
 XInput 1.3 support comes out of the box in Windows 7, Vista and XP SP1. XInput 1.4 is only supported in Windows 8 or later.
 
-# Usage
-
-If you just want to use the library on your project, simply head to the [releases page](https://github.com/StrikerX3/JXInput/releases/), grab the [latest version](https://github.com/StrikerX3/JXInput/releases/latest) and include it in your project. If you prefer to use a Maven-compatible build system, use one of the options below:
-
-## Install to your local Maven repository
-
-1. Clone this project
-2. Install to your local Maven repository (since it is not available in the Central Maven repository) by running `mvn clean install`.
-3. Include the Maven dependency into your project by adding the following to your `pom.xml`:
-
-    ```xml
-    <dependency>
-        <groupId>com.github.strikerx3</groupId>
-        <artifactId>jxinput</artifactId>
-        <version>1.0.0</version>
-    </dependency>
-    ```
-
-## Use [JitPack](http://jitpack.io/)
+## Use [Maven](https://maven.apache.org//)
 
 Add the following to your `pom.xml`:
 
 ```xml
-<repositories>
-   <repository>
-        <id>jitpack.io</id>           <!-- JitPack allows github repo to be used as a maven repo -->
-        <url>https://jitpack.io</url> <!-- For documentation: http://jitpack.io/ -->
-    </repository>
-</repositories>
-
-<dependencies>
-    <dependency>
-        <groupId>com.github.strikerx3</groupId>
-        <artifactId>jxinput</artifactId>
-        <version>1.0.0</version>    <!-- Use any released version, commit hash or branch-SNAPSHOT here -->
-    </dependency>
-</dependencies>
+<dependency>
+    <groupId>com.xenoamess</groupId>
+    <artifactId>jxinput</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
     
 # Code examples
